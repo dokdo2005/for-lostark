@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/app.css';
+import mainImage from './imgs/main_img.jpeg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mainContainer'>
+      <img src={mainImage} width={500} />
+      <div>&nbsp;</div>
+      <div>아직 준비중이에요!</div>
     </div>
   );
 }
