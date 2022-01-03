@@ -4,7 +4,7 @@ import mainImage from './imgs/main_img.jpeg';
 function App() {
   return (
     <div className='mainContainer'>
-      <img src={mainImage} width={500} />
+      <img src={mainImage} width={'50%'} />
       <div>&nbsp;</div>
       <div>아직 준비중이에요!</div>
     </div>
