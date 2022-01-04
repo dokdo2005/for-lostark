@@ -1,12 +1,12 @@
 import './css/app.css';
-import mainImage from './imgs/main_img.jpeg';
+import letterImg from './imgs/lostark_letter.png';
 
 function App() {
   return (
     <div className='mainContainer'>
-      <img src={mainImage} width={'100%'} />
+      <img src={letterImg} width={'65%'} />
       <div>&nbsp;</div>
-      <div>아직 준비중이에요!</div>
+      <div className='mainText'>모험가의 편지가 도착했어요!</div>
     </div>
   );
 }
