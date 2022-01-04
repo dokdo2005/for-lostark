@@ -14,13 +14,13 @@
     font-size: 3.5vh;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 1024px) {
     .letterPopup {
         width: 100%;
     }
 }
 
-@media (min-width: 425px) {
+@media screen and (min-width: 1024px) {
     .letterPopup {
         width: 40%;
     }
