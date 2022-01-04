@@ -13,3 +13,22 @@
     color: #fff;
     font-size: 3.5vh;
 }
+
+@media (max-width: 425px) {
+    .letterPopup {
+        width: 100%;
+    }
+}
+
+@media (min-width: 425px) {
+    .letterPopup {
+        width: 40%;
+    }
+}
+
+.letterPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
