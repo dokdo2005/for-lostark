@@ -19,6 +19,7 @@ const App = () => {
       </button>
       {isVisible ? (
         <div className='letterPopup'>
+          <a className='popupCloseBtn' onClick={() => setVisibility(false)}>X</a>
           <img src={letterImg} width={'100%'} />
         </div>
       ) : null}
