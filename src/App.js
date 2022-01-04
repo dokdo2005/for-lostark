@@ -13,7 +13,7 @@ const App = () => {
       <div className='mainText'>모험가의 편지가 도착했어요!</div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
-      <button className='letterOpenBtn' onClick={() => setVisibility(true)}>
+      <button className='letterOpenBtn' onClick={() => setVisibility(true)} disabled={isVisible}>
         <p className='letterOpenBtnText'>열어보기</p>
         <p className='letterOpenBtnSubText'>모험가의 편지</p>
       </button>
