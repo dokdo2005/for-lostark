@@ -1,30 +1,40 @@
-import {useState} from 'react';
-import './css/app.css';
-import letterIcon from './imgs/lostark_letter.png';
-import letterImg from './imgs/letter_image_1.png';
+import { useState } from "react";
+import "./css/app.css";
+import letterIcon from "./imgs/lostark_letter.png";
+import letterImg from "./imgs/letter_image_1.png";
 
 const App = () => {
-  const [isVisible, setVisibility] = useState(false);
+  const [isVisible, setVisible] = useState(false);
+
+  const LetterPopup = () => {
+    return (
+      <div className="letterPopup">
+        <a className="popupCloseBtn" onClick={() => setVisible(false)}>
+          X
+        </a>
+        <img src={letterImg} width={"100%"} />
+      </div>
+    );
+  };
 
   return (
-    <div className='mainContainer'>
-      <img src={letterIcon} width={'65%'} />
+    <div className="mainContainer">
+      <img src={letterIcon} width={"65%"} />
       <div>&nbsp;</div>
-      <div className='mainText'>모험가의 편지가 도착했어요!</div>
+      <div className="mainText">모험가의 편지가 도착했어요!</div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
-      <button className='letterOpenBtn' onClick={() => setVisibility(true)} disabled={isVisible}>
-        <p className='letterOpenBtnText'>열어보기</p>
-        <p className='letterOpenBtnSubText'>모험가의 편지</p>
+      <button
+        className="letterOpenBtn"
+        onClick={() => setVisible(true)}
+        disabled={isVisible}
+      >
+        <p className="letterOpenBtnText">열어보기</p>
+        <p className="letterOpenBtnSubText">모험가의 편지</p>
       </button>
-      {isVisible ? (
-        <div className='letterPopup'>
-          <a className='popupCloseBtn' onClick={() => setVisibility(false)}>X</a>
-          <img src={letterImg} width={'100%'} />
-        </div>
-      ) : null}
+      {isVisible ? <LetterPopup /> : null}
     </div>
   );
-}
+};
 
 export default App;
