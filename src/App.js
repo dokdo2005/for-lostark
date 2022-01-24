@@ -32,6 +32,11 @@ const App = () => {
         <p className="letterOpenBtnText">열어보기</p>
         <p className="letterOpenBtnSubText">모험가의 편지</p>
       </button>
+      <div className="adListLink">
+        <a href="https://bit.ly/3qUrU42" target={"_blank"} rel={"noreferrer"}>
+          판교역 광고 시안 모음
+        </a>
+      </div>
       {isVisible ? <LetterPopup /> : null}
     </div>
   );
